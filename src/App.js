@@ -18,6 +18,7 @@ import CompoA from "./components/CompoA";
 import CompoB from "./components/CompoB";
 import CompoC from "./components/CompoC";
 import DataFetchingOne from "./components/DataFetchingOne";
+import DataFetchingTwo from "./components/DataFetchingTwo";
 
 export const CountContext = React.createContext();
 
@@ -68,9 +69,10 @@ function App() {
         <CompoA />
         <CompoB />
         <CompoC />
-    </CountContext.Provider> */}
+    </CountContext.Provider> 
+      <DataFetchingOne /> */}
 
-      <DataFetchingOne />
+      <DataFetchingTwo />
     </div>
   );
 }
