@@ -17,34 +17,36 @@ import CounterThree from "./components/CounterThree";
 import CompoA from "./components/CompoA";
 import CompoB from "./components/CompoB";
 import CompoC from "./components/CompoC";
+import DataFetchingOne from "./components/DataFetchingOne";
 
 export const CountContext = React.createContext();
 
 //  export const ChannelContext = React.createContext();
 
-const initialState = 0;
-const reducer = (state, action) => {
-  switch (action) {
-    case "increment":
-      return state + 1;
-    case "decrement":
-      return state - 1;
-    case "reset":
-      return initialState;
-    default:
-      return state;
-  }
-};
+// const initialState = 0;
+// const reducer = (state, action) => {
+//   switch (action) {
+//     case "increment":
+//       return state + 1;
+//     case "decrement":
+//       return state - 1;
+//     case "reset":
+//       return initialState;
+//     default:
+//       return state;
+//   }
+// };
 
 function App() {
-  const [count, dispatch] = useReducer(reducer, initialState);
+  // const [count, dispatch] = useReducer(reducer, initialState);
 
   return (
-    <CountContext.Provider
-      value={{ countState: count, countDispatch: dispatch }}
-    >
-      <div className="App">
-        {/* <ClassCounter />
+    // <CountContext.Provider
+    //   value={{ countState: count, countDispatch: dispatch }}
+    // >
+
+    <div className="App">
+      {/* <ClassCounter />
       <HookCounter />
       <HookCounterTwo />  
       <HookCounterThree />
@@ -61,13 +63,15 @@ function App() {
         <ChannelContext.Provider value={"Codevolution"}>
           <ComponentC />
         </ChannelContext.Provider>
-      </UserContext.Provider> */}
-        count - {count}
+      </UserContext.Provider> 
+        {/* count - {count}
         <CompoA />
         <CompoB />
         <CompoC />
-      </div>
-    </CountContext.Provider>
+    </CountContext.Provider> */}
+
+      <DataFetchingOne />
+    </div>
   );
 }
 
