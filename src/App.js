@@ -19,6 +19,8 @@ import CompoB from "./components/CompoB";
 import CompoC from "./components/CompoC";
 import DataFetchingOne from "./components/DataFetchingOne";
 import DataFetchingTwo from "./components/DataFetchingTwo";
+import FocusInput from "./components/FocusInput";
+import HookTimer from "./components/HookTimer";
 
 export const CountContext = React.createContext();
 
@@ -70,9 +72,11 @@ function App() {
         <CompoB />
         <CompoC />
     </CountContext.Provider> 
-      <DataFetchingOne /> */}
+      <DataFetchingOne /> 
+<DataFetchingTwo /> 
+<FocusInput /> */}
 
-      <DataFetchingTwo />
+      <HookTimer />
     </div>
   );
 }
